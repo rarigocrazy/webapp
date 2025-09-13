@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: telegram-webapp
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python web_server.py"
+    envVars:
+      - key: SECRET_KEY
+        value: 4899cd0d1d863eadb332bb38fbb3b2cb
+      - key: PYTHON_VERSION
+        value: 3.10
